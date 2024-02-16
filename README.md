@@ -35,14 +35,3 @@ With Neotour, users can quickly and easily find and book a tour that suits their
 <h2>Contact</h2>
 
 If you have any questions or suggestions, feel free to reach out to Isan at [zaku47shift@gmail.com].
-<h2>Getting Started</h2>
-
-<h4>To run the project locally, follow these steps:</h4>
-
-<h5>1. Clone the repository:<h5>
-
-    gh repo clone Isehou/neobis-front-themeal
-
-<h2>Contact</h2>
-
-If you have any questions or suggestions, feel free to reach out to Isan at [zaku47shift@gmail.com].
