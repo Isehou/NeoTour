@@ -2,7 +2,8 @@
 
 <h2>Description</h2>
 
-Neotour - это интуитивно понятное приложение для бронирования туров, разработанное с учетом потребностей современных путешественников. Оно предоставляет пользователям широкий выбор туров по различным направлениям с детальными описаниями, фотографиями. С помощью Neotour пользователи могут легко и быстро найти и забронировать тур, который соответствует их предпочтениям и бюджету.
+Neotour - is an intuitive tour booking app designed with the needs of modern travelers in mind. It provides users with a wide selection of tours in various directions with detailed descriptions and photographs. 
+With Neotour, users can quickly and easily find and book a tour that suits their preferences and budget.
 
 <h2>Materials for Study</h2>
 
