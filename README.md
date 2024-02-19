@@ -2,12 +2,10 @@
 
 <h2>Description</h2>
 
-Neotour - is an intuitive tour booking app designed with the needs of modern travelers in mind. It provides users with a wide selection of tours in various directions with detailed descriptions and photographs. 
+Neotour - is an intuitive tour booking app designed with the needs of modern travelers in mind. It provides users with a wide selection of tours in various directions with detailed descriptions and photographs.
 With Neotour, users can quickly and easily find and book a tour that suits their preferences and budget.
 
 <h2>Materials for Study</h2>
-
-          
 
 <h2>Technologies</h2>
 
@@ -22,7 +20,7 @@ With Neotour, users can quickly and easily find and book a tour that suits their
 
 <h2>Demo</h2>
 
-<h4>Check out the live demo </h4> ...soon
+<h4>Check out the live demo </h4> https://neo-tour-beta.vercel.app/
 
 <h2>Getting Started</h2>
 
