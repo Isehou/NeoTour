@@ -1,8 +1,10 @@
 import React from "react";
-import mountainFrame from "../../assets/Frame 25.png";
+import mountainFrame from "../../assets/pages-element/Frame 25.png";
+import arrow from "../../assets/pages-element/Arrow 1.svg";
 import "../page-global.css";
 import "./home-page.css";
 import Discover from "../discover/Discover";
+import Recommended from "../recommended/Recommended";
 
 function HomePage() {
   return (
@@ -16,14 +18,14 @@ function HomePage() {
               the mountains. Enjoy the best experience with us!
             </p>
             <button className="title-part__button-wrapper">
-              Let's GO!
-              <>arrow</>
+              Choose Your Tour
             </button>
           </div>
           <img className="title-part__img" src={mountainFrame} alt="" />
         </div>
       </div>
       <Discover></Discover>
+      <Recommended></Recommended>
     </div>
   );
 }

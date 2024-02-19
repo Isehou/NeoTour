@@ -22,7 +22,21 @@
   font-size: 24px;
 }
 .title-part__button-wrapper {
+  cursor: pointer;
   margin-top: 64px;
+  width: 220px;
+  height: 42px;
+  font-size: 20px;
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: 1px solid var(--blue-color);
+  border-radius: 10px;
+}
+.title-part__button-wrapper:hover {
+  background-color: var(--blue-color);
+  color: white;
+  border: none;
 }
 .title-part__img {
   width: 450px;

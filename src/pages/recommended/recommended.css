@@ -1,0 +1,31 @@
+.recom-page {
+  padding: var(--internal-padding);
+}
+.recom-img-group {
+  margin-top: 82px;
+  display: flex;
+  justify-content: space-between;
+}
+.recom-img-card {
+  position: relative;
+}
+.recom-img-card p {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 14px;
+  width: 282px;
+  height: 51px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.recom-img {
+  border-radius: 14px;
+  width: 282px;
+  height: 282px;
+}

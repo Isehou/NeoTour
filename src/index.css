@@ -23,5 +23,5 @@ code {
   --black-color: #141414;
   --white-color: #fff;
   --blue-color: #6a62b7;
-  --box-shadow: 10px 12px 29px -14px rgba(0, 0, 0, 0.75);
+  --shadow: 10px 12px 29px -14px rgba(0, 0, 0, 0.75);
 }
