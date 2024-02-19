@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import TourView from "./components/views/TourView";
+import PhoneValidation from "./components/popup/PhoneValidation";
 
 function App() {
   // const navigate = useNavigate();
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/" element={<PhoneValidation />}></Route>
+        {/* <Route path="/" element={<HomePage />}></Route> */}
         <Route path="/tour-view" element={<TourView />}></Route>
       </Routes>
     </div>
