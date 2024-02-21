@@ -2,36 +2,86 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 778px;
 }
 .phone-validation-wrapper {
   width: 614px;
-  height: 683px;
   border-radius: 48px;
   text-align: left;
   border: 1px solid black;
-  padding: 20px 40px 0;
+  padding: 40px;
 }
 .validation-text-frame {
   width: 500px;
 }
-.react-international-phone-input-container {
+.validation-text-frame h1 {
+  padding: 0;
+  margin: 0;
+}
+.react-international-phone-input-container,
+.validation-input {
   width: 534px;
   height: 64px;
   padding: 10px 20px;
   align-items: center;
   border-radius: 100px;
   border: 1px solid var(--Input-gray, #636363);
+  font-size: 18px;
 }
 .react-international-phone-country-selector {
   border: none;
 }
 .react-international-phone-input {
+  font-size: 18px;
   border: none;
 }
 .react-international-phone-flag-emoji
   .react-international-phone-country-selector-button__flag-emoji {
   width: 24px;
   height: 24px;
+}
+.validation-people-preorder {
+  width: 245px;
+  height: 125px;
+  font-size: 16px;
+}
+.validation-people-preorder .alignment-block {
+  display: flex;
+  align-items: center;
+  width: 245px;
+  height: 48px;
+}
+.validation-people-preorder .block-grey {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 48px;
+  background: #f3f3f3;
+  border-radius: 20px;
+}
+.validation-people-preorder__btn {
+  width: 42px;
+  height: 48px;
+  border-radius: 16px;
+  background: #897cff;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+}
+.validation-subtitle {
+  color: #888;
+  font-size: 16px;
+}
+.validation-submit__btn {
+  display: flex;
+  width: 534px;
+  height: 64px;
+  padding: 13px 130px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background: #6a62b7;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
 }
