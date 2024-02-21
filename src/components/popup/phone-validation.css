@@ -13,11 +13,28 @@
   background-color: white;
 }
 .validation-text-frame {
-  width: 500px;
+  width: 100%;
 }
 .validation-text-frame h1 {
   padding: 0;
   margin: 0;
+}
+.validation-text-frame__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.close-button {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 500;
 }
 .react-international-phone-input-container,
 .validation-input {

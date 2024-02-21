@@ -6,6 +6,7 @@ import {
 } from "react-international-phone";
 import "react-international-phone/style.css";
 import "./phone-validation.css";
+import closeButton from "../../assets/pages-element/uil_multiply.svg";
 
 function InfoValidation() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -32,7 +33,12 @@ function InfoValidation() {
     <div className="phone-validation">
       <div className="phone-validation-wrapper">
         <div className="validation-text-frame">
-          <h1>Info</h1>
+          <div className="validation-text-frame__title">
+            <h1>Info</h1>
+            <button className="close-button">
+              <img src={closeButton} alt="" />
+            </button>
+          </div>
           <p>
             To submit an application for a tour reservation, you need to fill in
             your information and select the number of people for the reservation
