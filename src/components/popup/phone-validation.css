@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
 }
 .phone-validation-wrapper {
   width: 614px;
   border-radius: 48px;
   text-align: left;
-  border: 1px solid black;
   padding: 40px;
+  background-color: white;
 }
 .validation-text-frame {
   width: 500px;
