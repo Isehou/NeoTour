@@ -5,10 +5,10 @@ import {
   parseCountry,
 } from "react-international-phone";
 import "react-international-phone/style.css";
-import "./phone-validation.css";
+import "./validation.css";
 import closeButton from "../../assets/pages-element/uil_multiply.svg";
 
-function InfoValidation() {
+function Validation({ validationActive, setValidationActive }) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [count, setCount] = useState(0);
 
@@ -30,8 +30,16 @@ function InfoValidation() {
   });
 
   return (
-    <div className="phone-validation">
-      <div className="phone-validation-wrapper">
+    <div
+      className={
+        validationActive ? "phone-validation active" : "phone-validation"
+      }
+      onClick={() => setValidationActive(false)}
+    >
+      <div
+        className="phone-validation-wrapper"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="validation-text-frame">
           <div className="validation-text-frame__title">
             <h1>Info</h1>
@@ -89,4 +97,4 @@ function InfoValidation() {
   );
 }
 
-export default InfoValidation;
+export default Validation;

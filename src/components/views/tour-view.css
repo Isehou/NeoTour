@@ -1,11 +1,88 @@
-import React from 'react'
-
-function TourView() {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
+.tour-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-export default TourView;
+.tour-view__wrapper {
+  width: 1440px;
+  height: 657px;
+  font-size: 16px;
+}
+.tour-view__wrapper h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.tour-view__head-block {
+  position: relative;
+}
+.tour-view__head-block img {
+  width: 1440px;
+  height: 657px;
+  object-fit: cover;
+}
+.tour-view__head-btn {
+  top: 100px;
+  left: 100px;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid var(--blue-color);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tour-view__head-btn:hover {
+  background: var(--blue-color);
+  border: none;
+}
+.arrow-left {
+  width: 30px;
+  height: 20px;
+}
+.tour-view__description-block__title {
+  font-size: 64px;
+  font-weight: 900;
+}
+.tour-view__description-block {
+  position: absolute;
+  top: 600px;
+  background-color: #fff;
+  width: 1440px;
+  height: 888px;
+  border-radius: 48px;
+  padding: 56px 120px;
+}
+.tour-view__description-block__location {
+  align-items: center;
+}
+.tour-view__icon {
+  margin-right: 10px;
+}
+.review {
+  align-items: center;
+}
+.book-btn {
+  margin-top: 150px;
+  border: none;
+  background: var(--blue-color);
+  color: white;
+  display: flex;
+  width: 1200px;
+  height: 64px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18pt;
+  border-radius: 100px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+.book-btn:hover {
+  background: #b4b0da;
+}

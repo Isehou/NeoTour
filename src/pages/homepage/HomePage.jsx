@@ -5,6 +5,7 @@ import "../page-global.css";
 import "./home-page.css";
 import Discover from "../discover/Discover";
 import Recommended from "../recommended/Recommended";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
             </p>
             <button className="title-part__button-wrapper">
               Choose Your Tour
+              <FaLongArrowAltRight className="arrow-right" />
             </button>
           </div>
           <img className="title-part__img" src={mountainFrame} alt="" />

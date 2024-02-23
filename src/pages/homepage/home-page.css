@@ -24,19 +24,28 @@
 .title-part__button-wrapper {
   cursor: pointer;
   margin-top: 64px;
-  width: 220px;
+  width: 100%;
+  max-width: 250px;
   height: 42px;
   font-size: 20px;
-  background: none;
   cursor: pointer;
   outline: inherit;
-  border: 1px solid var(--blue-color);
+  background-color: var(--blue-color);
+  border: none;
+  color: #fff;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-right {
+  width: 30px;
+  height: 20px;
 }
 .title-part__button-wrapper:hover {
-  background-color: var(--blue-color);
-  color: white;
-  border: none;
+  border: 1px solid var(--blue-color);
+  background: none;
+  color: var(--blue-color);
 }
 .title-part__img {
   width: 450px;

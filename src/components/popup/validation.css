@@ -2,8 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
-  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(0);
+}
+.phone-validation.active {
+  transform: scale(1);
 }
 .phone-validation-wrapper {
   width: 614px;
@@ -11,6 +19,7 @@
   text-align: left;
   padding: 40px;
   background-color: white;
+  border: none;
 }
 .validation-text-frame {
   width: 100%;
@@ -38,20 +47,42 @@
 }
 .react-international-phone-input-container,
 .validation-input {
+  box-sizing: border-box;
   width: 534px;
   height: 64px;
-  padding: 10px 20px;
+  padding: 0 20px;
   align-items: center;
   border-radius: 100px;
   border: 1px solid var(--Input-gray, #636363);
   font-size: 18px;
 }
+.react-international-phone-country-selector-button__flag-emoji {
+  width: 24px;
+  height: 24px;
+}
+.react-international-phone-country-selector-button__dropdown-arrow {
+  margin-left: 10px;
+}
+.react-international-phone-country-selector-button {
+  padding-right: 10px;
+  border: none;
+}
 .react-international-phone-country-selector {
   border: none;
 }
 .react-international-phone-input {
-  font-size: 18px;
-  border: none;
+  font-size: 18px !important;
+  border: none !important;
+  width: 100%;
+  height: 100% !important;
+  border-radius: 30px !important;
+}
+.react-international-phone-input::after {
+  content: "-";
+  position: absolute;
+  bottom: -10px; /* Располагаем тире снизу относительно ячейки */
+  left: 50%; /* Выравниваем тире по горизонтали */
+  transform: translateX(-50%);
 }
 .react-international-phone-flag-emoji
   .react-international-phone-country-selector-button__flag-emoji {
@@ -103,4 +134,9 @@
   color: #fff;
   font-size: 24px;
   font-weight: 500;
+  border: none;
+  transition-duration: 0.1s;
+}
+.validation-submit__btn:active {
+  background: #b4b0da;
 }

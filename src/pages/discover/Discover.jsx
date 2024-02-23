@@ -10,6 +10,7 @@ import arrowRight from "../../assets/pages-element/arrow-right.svg";
 import racekHouse from "../../assets/discovers/racek-house.jpg";
 import fujiMountain from "../../assets/discovers/fuji-mountain.jpg";
 import nothernMountain from "../../assets/discovers/nothern-mountain.jpg";
+import { Link } from "react-router-dom";
 
 function Discover() {
   return (
@@ -43,18 +44,24 @@ function Discover() {
         </a>
       </div>
       <div className="discover-img-group">
-        <div className="img-card">
-          <img className="img" src={nothernMountain} alt="" />
-          <p>Northern Mountain</p>
-        </div>
-        <div className="img-card">
-          <img className="img" src={fujiMountain} alt="" />
-          <p>Mount Fuji</p>
-        </div>
-        <div className="img-card">
-          <img className="img" src={racekHouse} alt="" />
-          <p>Racek’s House</p>
-        </div>
+        <Link to="/tour-view">
+          <div className="img-card">
+            <img className="img" src={nothernMountain} alt="" />
+            <p>Northern Mountain</p>
+          </div>
+        </Link>
+        <Link to="/tour-view">
+          <div className="img-card">
+            <img className="img" src={fujiMountain} alt="" />
+            <p>Mount Fuji</p>
+          </div>
+        </Link>
+        <Link to="/tour-view">
+          <div className="img-card">
+            <img className="img" src={racekHouse} alt="" />
+            <p>Racek’s House</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
