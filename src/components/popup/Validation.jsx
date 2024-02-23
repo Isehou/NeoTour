@@ -31,15 +31,10 @@ function Validation({ validationActive, setValidationActive }) {
 
   return (
     <div
-      className={
-        validationActive ? "phone-validation active" : "phone-validation"
-      }
+      className={validationActive ? "validation active" : "validation"}
       onClick={() => setValidationActive(false)}
     >
-      <div
-        className="phone-validation-wrapper"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="validation-wrapper" onClick={(e) => e.stopPropagation()}>
         <div className="validation-text-frame">
           <div className="validation-text-frame__title">
             <h1>Info</h1>
