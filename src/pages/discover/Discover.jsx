@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./discover.css";
@@ -8,23 +8,32 @@ import "../page-global.css";
 import arrowLeft from "../../assets/pages-element/arrow-left.svg";
 import arrowRight from "../../assets/pages-element/arrow-right.svg";
 
-import {
-  fetchListTour,
-  toursByRegionSelector,
-  regionsSelector,
-  applyFilter,
-} from "../../store/slices/listTourSlice";
+import { fetchListTour } from "../../store/slices/listTourSlice";
 
 function Discover({ id }) {
-  const tours = useSelector(toursByRegionSelector);
-  const regions = useSelector(regionsSelector);
-  const currentFilter = useSelector((state) => state.tours.filter);
+  const [filter, setFilter] = useState("asia");
+  const tours = useSelector((state) => state.tours.list);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchListTour());
-  }, []);
+  const regions = [
+    ["europe", "Europe"],
+    ["asia", "Asia"],
+    ["north_america", "North America"],
+    ["south_america", "South America"],
+    ["africa", "Africa"],
+    ["australia", "Australia"],
+    ["antarctica", "Antarctica"],
+  ];
 
+  const applyFilter = (newFilter) => {
+    setFilter(newFilter);
+    dispatch(fetchListTour(newFilter));
+  };
+
+  useEffect(() => {
+    dispatch(fetchListTour(filter));
+  }, []);
+  console.log(regions);
   return (
     <div className="discover-page" id={id}>
       <div className="discover-title-group">
@@ -39,21 +48,19 @@ function Discover({ id }) {
         </div>
       </div>
 
-      <div>
-        <div className="category">
-          {regions.map((elem) => (
-            <button
-              className={
-                currentFilter === elem
-                  ? "category-link active"
-                  : "category-link"
-              }
-              onClick={() => dispatch(applyFilter(elem))}
-            >
-              {elem}
-            </button>
-          ))}
-        </div>
+      <div className="category">
+        {regions.map(([key, value]) => (
+          <button
+            className={
+              filter === key ? "category-link active" : "category-link"
+            }
+            onClick={() => applyFilter(key)}
+          >
+            {value}
+          </button>
+        ))}
+      </div>
+      <div className="discover-list__wrapper">
         {tours.map((elem) => (
           <div className="discover-img-group" key={elem.id}>
             <Link to="/tour-view" elem={elem}>

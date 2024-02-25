@@ -5,12 +5,12 @@
   );
   height: 778px;
   width: 100%;
-  padding: var(--internal-padding);
 }
 .title-part {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: var(--internal-padding);
 }
 .title-part__text h1 {
   font-size: 96px;
@@ -27,8 +27,8 @@
   cursor: pointer;
   margin-top: 64px;
   width: 100%;
-  max-width: 250px;
-  height: 42px;
+  max-width: 270px;
+  height: 50px;
   font-size: 20px;
   cursor: pointer;
   outline: inherit;

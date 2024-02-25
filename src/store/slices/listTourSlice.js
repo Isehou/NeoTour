@@ -6,9 +6,11 @@ import { createAction } from "@reduxjs/toolkit";
 
 export const fetchListTour = createAsyncThunk(
   "tours/fetchListTour",
-  async () => {
+  async (region) => {
     try {
-      const response = await axios.get(API_URL + "/list-tours");
+      const response = await axios.get(API_URL + "/filtered-tours/", {
+        params: { region },
+      });
       return response.data;
     } catch (error) {
       console.error("Error fetching tours:", error);
