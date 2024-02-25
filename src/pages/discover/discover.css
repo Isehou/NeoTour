@@ -22,13 +22,16 @@
   list-style: none;
   padding: 0;
 }
-.category .category-link {
+.category-link {
   margin-right: 68px;
   color: var(--black-color);
   text-decoration: none;
 }
-.category .category-link:hover {
+.category-link:hover {
   color: var(--blue-color);
+}
+.category-link.active {
+  text-decoration: underline;
 }
 .discover-img-group {
   margin-top: 82px;

@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import "./tour-view.css";
 
-function TourView() {
+function TourView({ elem }) {
   const [validationActive, setValidationActive] = useState(false);
   const navigate = useNavigate();
   return (

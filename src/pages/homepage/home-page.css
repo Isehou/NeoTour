@@ -4,11 +4,13 @@
     linear-gradient(180deg, #d0cbff 0%, rgba(208, 203, 255, 0) 100%)
   );
   height: 778px;
+  width: 100%;
   padding: var(--internal-padding);
 }
 .title-part {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .title-part__text h1 {
   font-size: 96px;
@@ -37,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .arrow-right {
   width: 30px;

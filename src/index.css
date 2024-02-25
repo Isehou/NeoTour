@@ -19,7 +19,7 @@ code {
   font-family: "Satoshi", sans-serif;
 }
 :root {
-  --internal-padding: 120px 300px;
+  --internal-padding: 120px 200px;
   --black-color: #141414;
   --white-color: #fff;
   --blue-color: #6a62b7;

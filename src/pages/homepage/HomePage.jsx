@@ -6,6 +6,7 @@ import "./home-page.css";
 import Discover from "../discover/Discover";
 import Recommended from "../recommended/Recommended";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -18,15 +19,17 @@ function HomePage() {
               Enjoy your winter vacations with warmth and amazing sightseeing on
               the mountains. Enjoy the best experience with us!
             </p>
-            <button className="title-part__button-wrapper">
-              Choose Your Tour
-              <FaLongArrowAltRight className="arrow-right" />
-            </button>
+            <Link to="#discover">
+              <button className="title-part__button-wrapper">
+                Choose Your Tour
+                <FaLongArrowAltRight className="arrow-right" />
+              </button>
+            </Link>
           </div>
           <img className="title-part__img" src={mountainFrame} alt="" />
         </div>
       </div>
-      <Discover></Discover>
+      <Discover id="discover"></Discover>
       <Recommended></Recommended>
     </div>
   );
