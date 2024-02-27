@@ -1,8 +1,18 @@
-import React from "react";
-import "./recommended.css";
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchAllToursForRecommendations } from "../../store/slices/listTourSlice";
 import montanaImg from "../../assets/discovers/montana.jpg";
+import "./recommended.css";
 
 function Recommended() {
+  const tours = useSelector((state) => state.tours.list);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAllToursForRecommendations());
+  }, [tours]);
+  console.log("data", tours);
+
   return (
     <div className="recom-page">
       <h2 className="title">Recommended</h2>

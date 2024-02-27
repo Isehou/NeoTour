@@ -39,8 +39,7 @@
   cursor: pointer;
 }
 .tour-view__head-btn:hover {
-  background: #fff;
-  color: var(--blue-darker-color);
+  background: var(--blue-darker-color);
 }
 .arrow-left {
   width: 30px;
@@ -87,5 +86,5 @@
   cursor: pointer;
 }
 .book-btn:hover {
-  background: #b4b0da;
+  background: var(--blue-darker-color);
 }

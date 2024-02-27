@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Validation from "../popup/Validation";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAccountCircle } from "react-icons/md";
@@ -54,17 +54,6 @@ function TourView() {
                     {data.reviewer_name}
                   </span>
                   <p className="text-review-desc">{data.review_text}</p>
-                </div>
-                <div className="review">
-                  <span className="text-review__portrait">
-                    <MdAccountCircle className="tour-view__icon" />
-                    Anonymous
-                  </span>
-                  <p className="text-review-desc">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit natus similique, quisquam est voluptatem
-                    mollitia recusandae accusantium asperiores vitae iste.
-                  </p>
                 </div>
               </div>
             </div>
