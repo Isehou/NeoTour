@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { fetchListTour } from "../../store/slices/listTourSlice";
 import "./discover.css";
 import "../page-global.css";
 
 // pages-element
 import arrowLeft from "../../assets/pages-element/arrow-left.svg";
 import arrowRight from "../../assets/pages-element/arrow-right.svg";
-import { fetchListTour } from "../../store/slices/listTourSlice";
 
 function Discover({ id }) {
   const [filter, setFilter] = useState("europe");
@@ -61,8 +61,8 @@ function Discover({ id }) {
       </div>
       <div className="discover-list__wrapper">
         {tours.map((elem) => (
-          <div className="discover-img-group">
-            <Link to={`/tour-view/${elem.id}`} key={elem.id}>
+          <div className="discover-img-group" key={elem.id}>
+            <Link to={`/tour-view/${elem.id}`}>
               <div className="img-card">
                 <img className="img" src={elem.thumbnail} alt="" />
                 <p>{elem.location}</p>
