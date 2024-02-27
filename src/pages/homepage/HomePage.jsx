@@ -19,9 +19,9 @@ function HomePage() {
               Enjoy your winter vacations with warmth and amazing sightseeing on
               the mountains. Enjoy the best experience with us!
             </p>
-            <Link to="#discover">
+            <Link to="#discover" className="link-style">
               <button className="title-part__button-wrapper">
-                Choose Your Tour
+                Choose a tour
                 <FaLongArrowAltRight className="arrow-right" />
               </button>
             </Link>

@@ -22,6 +22,7 @@ code {
   --internal-padding: 120px 200px;
   --black-color: #141414;
   --white-color: #fff;
-  --blue-color: #6a62b7;
+  --blue-color: #6f62e7;
+  --blue-darker-color: #4f488a;
   --shadow: 10px 12px 29px -14px rgba(0, 0, 0, 0.75);
 }

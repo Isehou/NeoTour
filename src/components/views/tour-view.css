@@ -24,23 +24,23 @@
 }
 .tour-view__head-btn {
   top: 100px;
-  left: 100px;
+  left: 120px;
   position: absolute;
-  width: 120px;
+  width: 130px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
-  border: 1px solid var(--blue-color);
+  background: var(--blue-color);
+  border: none;
   border-radius: 20px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 .tour-view__head-btn:hover {
-  background: var(--blue-color);
-  border: none;
+  background: #fff;
+  color: var(--blue-darker-color);
 }
 .arrow-left {
   width: 30px;

@@ -7,11 +7,10 @@ import "../page-global.css";
 // pages-element
 import arrowLeft from "../../assets/pages-element/arrow-left.svg";
 import arrowRight from "../../assets/pages-element/arrow-right.svg";
-
 import { fetchListTour } from "../../store/slices/listTourSlice";
 
 function Discover({ id }) {
-  const [filter, setFilter] = useState("asia");
+  const [filter, setFilter] = useState("europe");
   const tours = useSelector((state) => state.tours.list);
   const dispatch = useDispatch();
 
@@ -33,7 +32,7 @@ function Discover({ id }) {
   useEffect(() => {
     dispatch(fetchListTour(filter));
   }, []);
-  console.log(regions);
+
   return (
     <div className="discover-page" id={id}>
       <div className="discover-title-group">
@@ -62,8 +61,8 @@ function Discover({ id }) {
       </div>
       <div className="discover-list__wrapper">
         {tours.map((elem) => (
-          <div className="discover-img-group" key={elem.id}>
-            <Link to="/tour-view" elem={elem}>
+          <div className="discover-img-group">
+            <Link to={`/tour-view/${elem.id}`} key={elem.id}>
               <div className="img-card">
                 <img className="img" src={elem.thumbnail} alt="" />
                 <p>{elem.location}</p>
@@ -77,11 +76,3 @@ function Discover({ id }) {
 }
 
 export default Discover;
-{
-  /* <Link to="/tour-view">
-          <div className="img-card">
-            <img className="img" src={racekHouse} alt="" />
-            <p>Racek’s House</p>
-          </div>
-        </Link> */
-}

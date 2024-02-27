@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { API_URL } from "../../services/api";
-import { createSelector } from "@reduxjs/toolkit";
+// import { createSelector } from "@reduxjs/toolkit";
 import { createAction } from "@reduxjs/toolkit";
 
 export const fetchListTour = createAsyncThunk(
@@ -23,7 +23,7 @@ export const applyFilter = createAction("tours/applyFilter");
 const initialState = {
   list: [],
   filter: "asia",
-  loading: "idle",
+  loading: false,
   error: "",
 };
 
@@ -52,21 +52,21 @@ const listTourSlice = createSlice({
   },
 });
 
-export const toursByRegionSelector = createSelector(
-  [(state) => state.tours.list, (state) => state.tours.filter],
-  (list, filter) => {
-    return list.filter((e) => {
-      console.log(e, filter);
-      return e.region === filter;
-    });
-  }
-);
+// export const toursByRegionSelector = createSelector(
+//   [(state) => state.tours.list, (state) => state.tours.filter],
+//   (list, filter) => {
+//     return list.filter((e) => {
+//       console.log(e, filter);
+//       return e.region === filter;
+//     });
+//   }
+// );
 
-export const regionsSelector = createSelector(
-  (state) => state.tours.list,
-  (list) => {
-    return list.map((e) => e.region);
-  }
-);
+// export const regionsSelector = createSelector(
+//   (state) => state.tours.list,
+//   (list) => {
+//     return list.map((e) => e.region);
+//   }
+// );
 
 export const listTourReducer = listTourSlice.reducer;
