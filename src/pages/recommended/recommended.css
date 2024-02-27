@@ -1,31 +1,22 @@
 .recom-page {
   padding: var(--internal-padding);
+  max-width: 100%;
+  flex-flow: column;
+  overflow: hidden;
 }
 .recom-img-group {
-  margin-top: 82px;
+  margin-top: 50px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .recom-img-card {
+  margin: 20px 30px 0 0;
   display: flex;
   position: relative;
   min-width: 300px;
   height: 300px;
   overflow: hidden;
   cursor: pointer;
-  margin-top: 30px;
-}
-@media (max-width: 1024px) {
-  .recom-img-card {
-    flex-basis: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 600px) {
-  .recom-img-card {
-    flex-basis: 100%;
-  }
 }
 .recom-img {
   background-size: cover;

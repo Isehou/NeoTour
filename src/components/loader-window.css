@@ -19,7 +19,7 @@
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 32px solid #fff;
+  border: 32px solid var(--blue-color);
   border-color: #fff transparent #fff transparent;
   animation: loader 1.2s infinite;
 }

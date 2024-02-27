@@ -1,6 +1,9 @@
 .discover-page {
   padding: var(--internal-padding);
   text-align: left;
+  max-width: 100%;
+  height: fit-content;
+  flex-flow: column;
 }
 .discover-title-group {
   display: flex;
@@ -28,6 +31,7 @@
   margin-right: 50px;
   color: var(--black-color);
   text-decoration: none;
+  white-space: nowrap;
   font-size: 20px;
   background: none;
   border: none;
@@ -42,23 +46,20 @@
   color: var(--blue-color);
 }
 .discover-list__wrapper {
+  margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
-  height: fit-content;
-  justify-content: space-between;
-  overflow: hidden;
-  flex-wrap: pre-wrap;
 }
 .discover-img-group {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 82px 30px 0 0;
+  margin: 20px 30px 0 0;
+  max-width: 420px;
 }
 .img-card {
   display: flex;
   position: relative;
-  min-width: 420px;
+  width: 420px;
   height: 320px;
   overflow: hidden;
   cursor: pointer;
@@ -68,18 +69,6 @@
   border-radius: 20px;
   width: 100%;
   height: 100%;
-}
-
-@media (max-width: 1024px) {
-  .img-card {
-    flex-basis: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 600px) {
-  .img-card {
-    flex-basis: 100%;
-  }
 }
 .img-card:hover {
   transform: scale(1.02);

@@ -7,6 +7,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 
 import "./tour-view.css";
+import "../loader-window.css";
 import { useTour } from "../../hooks/useTour";
 
 function TourView() {
