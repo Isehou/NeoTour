@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mountainFrame from "../../assets/pages-element/Frame 25.png";
-import arrow from "../../assets/pages-element/Arrow 1.svg";
-import "../page-global.css";
-import "./home-page.css";
 import Discover from "../discover/Discover";
 import Recommended from "../recommended/Recommended";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import "../page-global.css";
+import "./home-page.css";
 
 function HomePage() {
   return (

@@ -19,7 +19,7 @@ function Validation({ validationActive, setValidationActive }) {
   };
 
   const handleIncrement = () => {
-    if (count < 5) {
+    if (count < 6) {
       setCount(count + 1);
     }
   };
@@ -83,7 +83,9 @@ function Validation({ validationActive, setValidationActive }) {
               </button>
             </div>
             <img src="" alt="" />
-            <p>{count} People</p>
+            <pre>
+              <span> 6 People</span>
+            </pre>
           </div>
         </div>
         <button className="validation-submit__btn">Submit</button>

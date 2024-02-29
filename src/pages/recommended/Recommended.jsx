@@ -1,38 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchAllToursForRecommendations } from "../../store/slices/listTourSlice";
-import montanaImg from "../../assets/discovers/montana.jpg";
+import { fetchAllTours } from "../../store/slices/allToursSlice";
 import "./recommended.css";
 
 function Recommended() {
-  const tours = useSelector((state) => state.tours.list);
+  const allTours = useSelector((state) => state.allTours.allListTours);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchAllToursForRecommendations());
-  }, [tours]);
-  console.log("data", tours);
+    dispatch(fetchAllTours());
+  }, []);
 
   return (
     <div className="recom-page">
       <h2 className="title">Recommended</h2>
       <div className="recom-img-group">
-        <div className="recom-img-card">
-          <img className="recom-img" src={montanaImg} alt="" />
-          <p>Greenough, Montana</p>
-        </div>
-        <div className="recom-img-card">
-          <img className="recom-img" src={montanaImg} alt="" />
-          <p>Greenough, Montana</p>
-        </div>
-        <div className="recom-img-card">
-          <img className="recom-img" src={montanaImg} alt="" />
-          <p>Greenough, Montana</p>
-        </div>
-        <div className="recom-img-card">
-          <img className="recom-img" src={montanaImg} alt="" />
-          <p>Greenough, Montana</p>
-        </div>
+        {allTours.map((item) => (
+          <Link to={`/tour-view/${item.id}`} key={item.id}>
+            <div className="recom-img-card">
+              <img className="recom-img" src={item.thumbnail} alt="" />
+              <p>{item.location}</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

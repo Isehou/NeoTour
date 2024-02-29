@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { listTourReducer } from "./slices/listTourSlice";
+import { filterTourReducer } from "./slices/filterTourSlice";
+import { allToursReducer } from "./slices/allToursSlice";
 
 export const store = configureStore({
   reducer: {
-    tours: listTourReducer,
+    tours: filterTourReducer,
+    allTours: allToursReducer,
   },
 });

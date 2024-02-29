@@ -1,0 +1,8 @@
+.booked-popup {
+  display: flex;
+  width: 614px;
+  padding: 40px 56px 56px 57px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}

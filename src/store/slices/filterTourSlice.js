@@ -3,25 +3,13 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { API_URL } from "../../services/api";
 import { createAction } from "@reduxjs/toolkit";
 
-export const fetchListTour = createAsyncThunk(
+export const fetchFilterTour = createAsyncThunk(
   "tours/fetchListTour",
   async (region) => {
     try {
       const response = await axios.get(API_URL + "/filtered-tours/", {
         params: { region },
       });
-      return response.data;
-    } catch (error) {
-      console.error("Error fetching tours:", error);
-    }
-  }
-);
-
-export const fetchAllToursForRecommendations = createAsyncThunk(
-  "tours/fetchAllTours",
-  async () => {
-    try {
-      const response = await axios.get(API_URL + "/list-tours/");
       return response.data;
     } catch (error) {
       console.error("Error fetching tours:", error);
@@ -38,7 +26,7 @@ const initialState = {
   error: "",
 };
 
-const listTourSlice = createSlice({
+const filterTourSlice = createSlice({
   name: "tours",
   initialState,
   reducers: {
@@ -48,19 +36,19 @@ const listTourSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchListTour.pending, (state) => {
+      .addCase(fetchFilterTour.pending, (state) => {
         state.list = [];
         state.loading = "loading";
       })
-      .addCase(fetchListTour.fulfilled, (state, { payload }) => {
+      .addCase(fetchFilterTour.fulfilled, (state, { payload }) => {
         state.list = payload;
         state.loading = "loaded";
       })
-      .addCase(fetchListTour.rejected, (state, action) => {
+      .addCase(fetchFilterTour.rejected, (state, action) => {
         state.loading = "error";
         state.error = action.error.message;
       });
   },
 });
 
-export const listTourReducer = listTourSlice.reducer;
+export const filterTourReducer = filterTourSlice.reducer;

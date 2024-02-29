@@ -5,10 +5,10 @@ import { MdAccountCircle } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useParams } from "react-router-dom";
+import { useTour } from "../../hooks/useTour";
 
 import "./tour-view.css";
 import "../loader-window.css";
-import { useTour } from "../../hooks/useTour";
 
 function TourView() {
   const [validationActive, setValidationActive] = useState(false);
