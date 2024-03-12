@@ -15,14 +15,14 @@
     Интерактивная карусель с турами различных категорий.
     Подробное описание категорий и рекомендованных туров.
     Возможность плавного прокручивания страницы к списку туров при нажатии на кнопку "Let’s Go!".
-![Main-page] (https://github.com/Isehou/NeoTour/blob/main/main-page.png)
-![discover] (https://github.com/Isehou/NeoTour/blob/main/discover.png)
-![recommen] (https://github.com/Isehou/NeoTour/blob/main/recomemended.png)
+![Main-page](https://github.com/Isehou/NeoTour/blob/main/main-page.png)
+![discover](https://github.com/Isehou/NeoTour/blob/main/discover.png)
+![recommen](https://github.com/Isehou/NeoTour/blob/main/recomemended.png)
 
 <h4>Детальный экран тура</h4>
 
 Детальная страница тура предоставляет пользователю более подробную информацию о выбранном путешествии и позволяет оформить бронь.
-![details] (https://github.com/Isehou/NeoTour/blob/main/details-page.png)
+![details](https://github.com/Isehou/NeoTour/blob/main/details-page.png)
 
 <h4>Модальное окно для отправки заявки</h4>
 
@@ -31,7 +31,7 @@
     Автозаполнение кода страны (+996) с возможностью изменения.
     Валидация поля для ввода номера телефона.
     Возможность отправить заявку на бронирование тура.
-![popup] (https://github.com/Isehou/NeoTour/blob/main/popup.png)
+![popup](https://github.com/Isehou/NeoTour/blob/main/popup.png)
 
 <h2>Технологии</h2>
 
