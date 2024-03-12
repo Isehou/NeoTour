@@ -14,7 +14,7 @@
 
     Интерактивная карусель с турами различных категорий.
     Подробное описание категорий и рекомендованных туров.
-    Возможность плавного прокручивания страницы к списку туров при нажатии на кнопку "Let’s Go!".
+    Возможность плавного прокручивания страницы к списку туров при нажатии на кнопку "Choose a tour!".
 ![Main-page](https://github.com/Isehou/NeoTour/blob/main/main-page.png)
 ![discover](https://github.com/Isehou/NeoTour/blob/main/discover.png)
 ![recommen](https://github.com/Isehou/NeoTour/blob/main/recomemended.png)
